@@ -2,10 +2,6 @@
 wd <- "D:\\Dropbox\\Coursera\\01 Data Science\\04 Exploratory Data Analysis\\Programming Assignment 1"
 setwd(wd)
 
-#calculate memory space
-(2075259*9*8)/(2^20*1000)
-str(data)
-
 ### Read in the data; change the date and time format
 data <- read.table("./data/household_power_consumption.txt", sep=";",header=TRUE, stringsAsFactors=FALSE, na.strings="?")
 data$Date <- as.Date(data$Date, format="%d/%m/%Y")
